@@ -10,3 +10,7 @@ var span = "<span>" + h(someText) + "</span>";
 
 ## License
 MIT License
+
+## About
+Author: Moxley Stratton
+Home: http://github.com/moxley/hjs

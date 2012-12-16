@@ -1,5 +1,7 @@
 // Escape HTML entities in the given string
 // Returns new string with HTML-specific characters escaped
+// http://github.com/moxley/hjs
+// Written by Moxley Stratton
 function h(str) {
   var i, c, out = "", trans, arr;
   if (typeof (str) === "number" || str === true || str === false) {
