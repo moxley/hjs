@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <script src="h.js"></script>
+  </head>
+  <body>
+    <script>
+    var testData = [
+      ["hello", "hello"],
+      ['"', "&quot;"],
+      ["'", "&apos;"],
+      ["<", "&lt;"],
+      [">", "&gt;"],
+      ["&", "&amp;"],
+    ];
+    var i, failed = false;
+    for (i = 0; i < testData.length; i ++) {
+      if (h(testData[i][0]) !== testData[i][1]) {
+        alert("Failed on '" + testData[i][0] + "'. Got: '" + h(testData[i][0]) + "', but expected: '" + testData[i][1] + "'");
+        failed = true;
+      }
+    }
+    if (!failed) {
+      alert("PASSED");
+    }
+    </script>
+  </body>
+</html>
